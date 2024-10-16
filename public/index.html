@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"
+  />
+  <style>
+    /* Include here only critical CSS, all possible styles should be used in react components as sx property of MUI components */
+    body {
+      min-height: 100vh;
+    }
+
+    .root {
+      min-height: 100vh;
+    }
+
+    .MuiDataGrid-root .MuiDataGrid-cell:focus,
+    .MuiDataGrid-root .MuiDataGrid-columnHeader:focus,
+    .MuiDataGrid-root .MuiDataGrid-columnHeader:focus-within,
+    .MuiDataGrid-root .MuiDataGrid-cell:focus-within {
+      outline: none;
+    }
+    /* This fixes not full MUI input file field clickable for open system file dialog */
+    .fix-full-with-click .MuiInputBase-adornedEnd {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .fix-full-with-click .MuiInputBase-adornedEnd label {
+      width: 100%;
+    }
+    .fix-full-with-click .MuiInputBase-adornedEnd label span {
+      padding-left: 44px;
+    }
+    .fix-full-with-click .MuiInputBase-adornedEnd .MuiInputAdornment-positionEnd {
+      position: absolute;
+      right: 0;
+      z-index: 2;
+    }
+    .fix-full-with-click .MuiTypography-caption {
+      pointer-events: none;
+    }
+    .fix-full-with-click .MuiInputBase-adornedStart .MuiInputAdornment-positionStart {
+      position: absolute;
+      left: 12px;
+      pointer-events: none;
+    }
+    /* Add cursor pointer to modal backdrop */
+    .MuiModal-root .MuiBackdrop-root {
+      cursor: pointer;
+    }
+    .MuiModal-root .MuiBox-root {
+      cursor: default;
+    }
+    /* more neat icon placement */
+    .MuiButton-sizeSmall .MuiButton-startIcon.MuiButton-iconSizeSmall {
+      transform: translate(0, -1px);
+      margin-right: 4px;
+    }
+    /* make tables neat */
+    .MuiTableCell-root {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .MuiTableCell-root + .MuiTableCell-root {
+      padding-left: 16px;
+    }
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+</html>
